@@ -1,0 +1,313 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a:link{
+    text-decoration:none
+}
+
+body{
+    font-family: "Roboto", sans-serif;;
+    color: white;
+}
+
+.main_login{
+    position: relative;
+    display: flex;
+    width: 360px;
+    padding: 8% 0 0;
+    margin: 200px auto; /* вернул 200px*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.logo_login{ 
+    position: absolute;
+    top: 14px;
+    left: 140px;  
+    font-size: large;
+    color: black;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  height: 10%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form button {
+  text-transform: uppercase;
+  outline: 0;
+  background: linear-gradient(90deg, rgba(248,155,66) 0%, rgba(245,130,76) 50%);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+.form button:hover,.form button:active,.form button:focus {
+  background: linear-gradient(90deg, rgba(244,151,64) 0%, rgba(240,124,73) 50%);
+}
+
+.form .message {
+  outline: 0;
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+.form .message a {
+  outline: 0;
+  color: #C86D2C;
+  text-decoration: none;
+}
+
+.form .register-form {
+  display: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.container .info span .fa {
+  color: #EF3B3A;
+}
+
+
+/* дальше регистарция */
+.footer_top_registration{
+    width: 360px;
+}
+
+.social_box{
+    margin-top: 30px;
+    text-align: center;
+    width: 50px;
+}
+
+.main_registration{
+    box-sizing: border-box;
+    position: relative;
+    padding: 100px 30px 15px 30px;
+    width: 450px;
+    height: 500px;
+    margin: 200px auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    box-shadow:0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.logo_registration{
+    position: absolute;
+    top: 10px;
+    left: 180px;
+    font-size: large;
+    color: #000000;
+}
+
+.text_top{
+  color: #000000;
+}
+
+.form_registration{
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    margin-bottom: 20px;
+}
+
+.mail_registration,.password_registration,.repeat_password,.nick_registration,.age_registration,.log,.pas,.verify{
+    height: 20px;
+}
+
+.form_registration input{
+  background: #f2f2f2;
+  height: 40px;
+  outline:0;
+  font-size: 14px;
+  padding-left: 15px;
+  border: none;
+}
+
+.footer_bottom{
+  color: #b3b3b3;
+}
+
+.password_alert{
+    color: red;
+    display: none;
+    margin-bottom: 20px;
+}
+
+.button_registration{
+    background: linear-gradient(90deg, rgba(248,155,66) 0%, rgba(245,130,76) 50%);
+    padding: 10px 0px;
+    width: 150px;
+    text-align: center;
+    transition: all 1s ease;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.link_to_login{
+    color: #b3b3b3;
+}
+
+.mail_verify{
+    box-sizing: border-box;
+    position: relative;
+    padding: 50px 30px 40px 30px;
+    width: 250px;
+    height: 300px;
+    margin: 200px auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    box-shadow:0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form_verify{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.verify{
+  outline:0;
+  height: 40px;
+  background: #f2f2f2;
+  font-size: 14px;
+  padding-left: 15px;
+  border: none;
+}
+
+.verify_back{
+  color: #b3b3b3;
+}
+
+.button_verify{
+    background: linear-gradient(90deg, rgba(248,155,66) 0%, rgba(245,130,76) 50%);
+    width: 100px;
+    padding: 10px 0px;
+    text-align: center;
+    transition: all 1s ease;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.create_caracter{
+    width: 400px;
+    height: 800px;
+    background-color: #FFFFFF;
+    box-shadow:0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.create_top_list{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.create_top_list_block{
+    width: 70px;
+    padding: 20px 0;
+    background: linear-gradient(90deg, rgb(243, 159, 81) 0%, rgb(243, 140, 92) 50%);
+    box-shadow:0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    text-align: center;
+    color: #000000;
+    transition: all 0.5s ease;
+}
+
+.create_main_list_item{
+    margin-top: 40px;
+    width: 80px;
+    height: 20px;
+    border: 1px solid #000;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(248,155,66) 0%, rgba(245,130,76) 50%);
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.create_done{
+  background: linear-gradient(90deg, rgb(247, 148, 56) 0%, rgb(243, 123, 67) 50%);
+    width: 100px;
+    padding: 10px 0px;
+    text-align: center;
+    transition: all 1s ease;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.create_done:hover, .create_main_list_item:hover, .create_top_list_block:hover, .button_verify:hover, .button_registration:hover{
+  background: linear-gradient(90deg, rgba(244,151,64) 0%, rgba(240,124,73) 50%);
+}
+
+
